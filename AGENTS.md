@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Demo data lives in localStorage via src/lib/civic-store.ts; pure rules (stats, karma, upvotes, analyzer) live in src/lib/civic.ts and are tested in src/test/civic.test.ts — keeps the MVP backend-free and testable.
